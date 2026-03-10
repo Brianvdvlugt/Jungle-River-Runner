@@ -414,8 +414,8 @@ Rigidbody:
   m_GameObject: {fileID: 1742553267}
   serializedVersion: 5
   m_Mass: 1
-  m_LinearDamping: 10
-  m_AngularDamping: 0.05
+  m_LinearDamping: 1
+  m_AngularDamping: 4
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -430,7 +430,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 64
   m_CollisionDetection: 0
 --- !u!65 &1742553269
 BoxCollider:
@@ -537,8 +537,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de4ec6f728b564846b10a1299da8ee1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Boat
-  thrust: 1
   rb: {fileID: 1742553268}
+  RotateSpeed: 2
+  boostSpeed: 2
+  baseSpeed: 1.5
 --- !u!114 &1742553274
 MonoBehaviour:
   m_ObjectHideFlags: 0
