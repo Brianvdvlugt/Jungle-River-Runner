@@ -3,15 +3,17 @@ using UnityEngine.InputSystem;
 
 public class Boat : MonoBehaviour
 {
-    public Rigidbody rb;
+    private Rigidbody rb;
 
-    public float RotateSpeed = 1;
-    public float boostSpeed = 1.5f;
-    public float baseSpeed = 1;
-    
+    [SerializeField] private float RotateSpeed;
+    [SerializeField] private float boostSpeed;
+
+    public bool Boosting;
+
+
     void Start()
     {
-        
+        rb = GetComponent<Rigidbody>();
     }
 
     private void FixedUpdate()
@@ -35,10 +37,12 @@ public class Boat : MonoBehaviour
         if (InputRotateLeft == 1 && InputRotateRight == 1)
         {
             rb.AddRelativeForce(Vector3.forward * boostSpeed);
-
+            Boosting = true;
         }
-
-        transform.position += Vector3.forward * baseSpeed * Time.fixedDeltaTime;
+        else
+        {
+            Boosting = false;
+        }
 
     }
 }

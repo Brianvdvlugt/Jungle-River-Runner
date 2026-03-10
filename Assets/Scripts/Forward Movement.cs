@@ -2,20 +2,22 @@ using UnityEngine;
 
 public class ForwardMovement : MonoBehaviour
 {
-    public Rigidbody rb;
+    private Rigidbody rb;
+
+    private Boat boat;
+
+    [SerializeField] private float baseSpeed;
 
     void Start()
     {
-        if (Application.isPlaying == true) {
-
-            rb.AddForce(0, 0, 10);
-
-        }
+        boat = FindFirstObjectByType<Boat>();
     }
    
-    void Update()
+    void FixedUpdate()
     {
-        
+        transform.position += Vector3.forward * baseSpeed * Time.fixedDeltaTime;
+
+
     }
 
 }
