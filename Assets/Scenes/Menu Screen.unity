@@ -1098,6 +1098,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1696413618}
+  - component: {fileID: 1696413622}
   - component: {fileID: 1696413621}
   - component: {fileID: 1696413620}
   - component: {fileID: 1696413619}
@@ -1210,6 +1211,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1696413617}
   m_CullTransparentMesh: 1
+--- !u!114 &1696413622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1696413617}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4730974d5fd67394ab9187906cdbe27f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayButton
+  Button: {fileID: 1696413617}
 --- !u!1 &1979023026
 GameObject:
   m_ObjectHideFlags: 0
