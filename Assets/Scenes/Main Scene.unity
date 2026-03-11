@@ -1358,7 +1358,7 @@ PrefabInstance:
     - target: {fileID: 13721486, guid: 24a3398e60ffa3a46afcb1d10229a496, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 051664ab965eeb940843c616306474bc, type: 2}
+      objectReference: {fileID: 2100000, guid: bedd99784cdafa94abed8cd3837a9aa5, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2068,6 +2068,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_Ocean_Tile_01
       objectReference: {fileID: 0}
+    - target: {fileID: 7118390763085785202, guid: 3f245ae871564f741b30bdbc8e31ed09, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 7.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 7118390763085785202, guid: 3f245ae871564f741b30bdbc8e31ed09, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 7118390763085785202, guid: 3f245ae871564f741b30bdbc8e31ed09, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 19.305
+      objectReference: {fileID: 0}
     - target: {fileID: 8494742925095573394, guid: 3f245ae871564f741b30bdbc8e31ed09, type: 3}
       propertyPath: m_LocalPosition.x
       value: 16.0015
@@ -2109,7 +2121,8 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 1953927856237472475, guid: 3f245ae871564f741b30bdbc8e31ed09, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f245ae871564f741b30bdbc8e31ed09, type: 3}
