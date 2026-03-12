@@ -1,6 +1,7 @@
 //using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using TMPro;
 
 public class GameManager : MonoBehaviour
@@ -18,7 +19,10 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-        
+        if (PlayerLives == 0)
+        {
+            SceneManager.LoadScene("Game Over");
+        }
     }
 
     public void StartGame()
@@ -29,12 +33,12 @@ public class GameManager : MonoBehaviour
 
         for (int i = 0; i < 7; i++)
         {
-            Instantiate(ObsticleVarients[Random.Range(0, 3)], new Vector3(Random.Range(-11f, 3.6f), Random.Range(-0.19f, 0f), Random.Range(0, 160)), Quaternion.identity);
+            Instantiate(ObsticleVarients[Random.Range(0, 3)], new Vector3(Random.Range(-11f, 3.6f), Random.Range(-0.19f, 0f), Random.Range(15, 160)), Quaternion.identity);
         }
 
         for (int i = 0; i < 5; i++)
         {
-            Instantiate(DebrisVarients[Random.Range(0, 2)], new Vector3(Random.Range(-11f, 3.6f), 0.26f, Random.Range(0, 160)), Quaternion.identity);
+            Instantiate(DebrisVarients[Random.Range(0, 2)], new Vector3(Random.Range(-11f, 3.6f), 0.26f, Random.Range(15, 160)), Quaternion.identity);
         }
     }
 }
