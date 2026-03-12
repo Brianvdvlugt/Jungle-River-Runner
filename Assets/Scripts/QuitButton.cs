@@ -3,20 +3,21 @@ using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class PlayButton : MonoBehaviour
+public class Quitbutton : MonoBehaviour
 {
-    public Button Button;
+    public Button quitButton;
 
     private void Start()
     {
-        Button.onClick.AddListener(TaskOnClick);
+        quitButton.onClick.AddListener(TaskOnClick);
     }
 
     private void TaskOnClick()
     {
         if (Application.isPlaying)
         {
-            SceneManager.LoadScene("Main Scene");
+            Application.Quit();
+
         }
     }
 }

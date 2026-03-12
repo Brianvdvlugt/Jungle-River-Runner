@@ -3,20 +3,20 @@ using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class PlayButton : MonoBehaviour
+public class MenuButton : MonoBehaviour
 {
-    public Button Button;
+    public Button menuButton;
 
     private void Start()
     {
-        Button.onClick.AddListener(TaskOnClick);
+        menuButton.onClick.AddListener(TaskOnClick);
     }
 
     private void TaskOnClick()
     {
         if (Application.isPlaying)
         {
-            SceneManager.LoadScene("Main Scene");
+            SceneManager.LoadScene("Menu");
         }
     }
 }

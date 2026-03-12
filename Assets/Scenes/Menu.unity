@@ -128,11 +128,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 120621962}
+  - component: {fileID: 120621966}
   - component: {fileID: 120621965}
   - component: {fileID: 120621964}
   - component: {fileID: 120621963}
   m_Layer: 5
-  m_Name: Button (1)
+  m_Name: Quit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -240,6 +241,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 120621961}
   m_CullTransparentMesh: 1
+--- !u!114 &120621966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 120621961}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5fd0321fd1f024b9b1e73c6b70b8da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Quitbutton
+  quitButton: {fileID: 120621963}
 --- !u!1 &699510631
 GameObject:
   m_ObjectHideFlags: 0
@@ -770,7 +784,7 @@ GameObject:
   - component: {fileID: 1274172462}
   - component: {fileID: 1274172461}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Title
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1103,7 +1117,7 @@ GameObject:
   - component: {fileID: 1696413620}
   - component: {fileID: 1696413619}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Play
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1223,7 +1237,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4730974d5fd67394ab9187906cdbe27f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayButton
-  Button: {fileID: 1696413617}
+  Button: {fileID: 1696413619}
 --- !u!1 &1979023026
 GameObject:
   m_ObjectHideFlags: 0
