@@ -1,10 +1,16 @@
+//using System;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class GameManager : MonoBehaviour
 {
     [SerializeField] private List<GameObject> ObsticleVarients = new List<GameObject>();
     [SerializeField] private List<GameObject> DebrisVarients = new List<GameObject>();
+    [SerializeField] public int PlayerLives;
+
+    public TMP_Text LivesText;
+
     void Start()
     {
         StartGame();
@@ -17,6 +23,10 @@ public class GameManager : MonoBehaviour
 
     public void StartGame()
     {
+        PlayerLives = 3;
+
+        LivesText.text = "Lives: " + PlayerLives;
+
         for (int i = 0; i < 7; i++)
         {
             Instantiate(ObsticleVarients[Random.Range(0, 3)], new Vector3(Random.Range(-11f, 3.6f), Random.Range(-0.19f, 0f), Random.Range(0, 160)), Quaternion.identity);
