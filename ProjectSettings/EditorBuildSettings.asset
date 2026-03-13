@@ -20,6 +20,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Win Screen.unity
     guid: 373dd121d53acc44caa41639cf254c77
+  - enabled: 1
+    path: Assets/Scenes/Easter egg Screen.unity
+    guid: 7e0daa5490c6a364ba504f1e553249c0
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0
